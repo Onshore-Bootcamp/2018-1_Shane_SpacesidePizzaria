@@ -1,0 +1,66 @@
+﻿@using SpaceSidePizzaria.Models;
+@model PizzaPO
+
+@{
+    ViewBag.Title = "Create Pizza";
+}
+
+<div class="container">
+    <h2>Create Your Own Pizza</h2>
+
+    <div class="row">
+        @using (Html.BeginForm("CreatePizza", "Pizza", FormMethod.Post))
+        {
+            if (TempData.ContainsKey("ErrorMessage"))
+            {
+                <p class="red-text">@TempData["ErrorMessage"]</p>
+            }
+
+            @Html.HiddenFor(model => model.PizzaID)
+            @Html.HiddenFor(model => model.OrderID);
+            @Html.HiddenFor(model => Model.Description)
+            @Html.HiddenFor(model => Model.Price)
+            @Html.HiddenFor(model => Model.ImagePath)
+
+
+            <div class="col s12 m8 l5">
+
+                <div class="input-field">
+                    @Html.DropDownListFor(model => Model.Crust, Model.CrustSelectListItems)
+                    @Html.LabelFor(model => Model.Crust)
+                    @Html.ValidationMessageFor(model => Model.Crust, null, new { @class = "red-text" })
+                </div>
+
+                <p>
+                    @Html.CheckBoxFor(model => Model.Cheese)
+                    @Html.LabelFor(model => Model.Cheese)
+                    @Html.ValidationMessageFor(model => Model.Cheese, null, new { @class = "red-text" })
+                </p>
+
+                <div class="input-field">
+                    @Html.DropDownListFor(model => Model.Size, Model.SizeSelectListItems)
+                    @Html.LabelFor(model => model.Size)
+                    @Html.ValidationMessageFor(model => Model.Size, null, new { @class = "red-text" })
+                </div>
+
+                <p class="small-text">
+                    * 2 toppings are included in the base price. Each topping after the first 2 are
+                    $1.25 each.
+                </p>
+                <div class="input-field">
+                    @Html.ListBoxFor(model => Model.ToppingsList, Model.ToppingsSelectListItems)
+                    @Html.LabelFor(model => Model.Toppings)
+                    @Html.ValidationMessageFor(model => Model.Toppings, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.DropDownListFor(model => Model.Sauce, Model.SauceSelectListItems)
+                    @Html.LabelFor(model => Model.Sauce)
+                    @Html.ValidationMessageFor(model => Model.Sauce, null, new { @class = "red-text" })
+                </div>
+
+                <button class="btn purple darken-3 waves-effect waves-light" type="submit">Add To Cart</button>
+            </div>
+        }
+    </div>
+</div>

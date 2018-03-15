@@ -1,0 +1,62 @@
+﻿@using SpaceSidePizzaria.Models;
+@model List<OrderPO>
+
+@{
+    ViewBag.Title = "My Deliveries";
+}
+
+<div class="container">
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <p class="red-text">@TempData["ErrorMessage"]</p>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <h4 class="light">You don't have any delivery orders at the moment.</h4>
+    }
+    else
+    {
+        <h3 class="light">My Delivery Orders</h3>
+
+        if (TempData.ContainsKey("SuccessMessage"))
+        {
+            <p class="green-text">@TempData["SuccessMessage"]</p>
+        }
+
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th class="capitalize">Buyer Name</th>
+                    <th>Buyer Address</th>
+                    <th>Paid For</th>
+                    <th>Order Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (OrderPO order in Model)
+                {
+                    <tr>
+                        <td class="capitalize">@Html.DisplayFor(model => order.BuyerName)</td>
+                        <td>@order.BuyerAddress</td>
+                        <td>@order.Paid</td>
+                        <td>@order.OrderDate</td>
+                        <td>
+                            @Html.ActionLink("Details", "OrderDetails", "Order", new { ID = order.OrderID }, null) |
+                            @Html.ActionLink("Complete", "CompleteDelivery", "Order", new { ID = order.OrderID }, new { @class = "green-text" }) |
+                            @Html.ActionLink("Remove", "RemoveDelivery", "Order", new { ID = order.OrderID }, new { @class = "red-text" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        if (TempData.ContainsKey("Directions"))
+        {
+            <br />
+            <a href="@TempData["Directions"]" class="btn waves-effect waves-light purple darken-3" target="_blank">Get Directions</a>
+        }
+    }
+</div>

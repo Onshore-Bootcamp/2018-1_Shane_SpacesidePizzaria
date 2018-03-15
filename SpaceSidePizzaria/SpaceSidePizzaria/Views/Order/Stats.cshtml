@@ -1,0 +1,153 @@
+﻿@using SpaceSidePizzaria.Models
+
+@{
+    ViewBag.Title = "Stats";
+}
+
+<div id="stats-page-header">
+    <div id="stats-header-container">
+        <img src="~/Content/Images/stats.png" />
+        <div id="stats-header-text">
+            <h3>Company Stats</h3>
+            <p>
+                Discover the analytical side of your business.<br />
+                Stay one step ahead of the competition.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    @if (TempData.ContainsKey("TotalOrders"))
+    {
+        <h4 class="light">Total Orders (@TempData["TotalOrders"])</h4>
+        <br />
+        <div class="divider"></div>
+    }
+
+    <br />
+
+    @if (TempData.ContainsKey("DeliveriesVSPickups"))
+    {
+        <h4 class="light">Delivery VS Pickups</h4>
+
+        Dictionary<string, Dictionary<string, int>> pickupDeliveries =
+            (TempData["DeliveriesVSPickups"] as Dictionary<string, Dictionary<string, int>>);
+
+        <canvas id="delivery-vs-pickup" height="200" width="600"></canvas>
+
+        <script>
+            window.addEventListener('load', function () {
+            var ctx = document.getElementById('delivery-vs-pickup').getContext('2d');
+            var dateLabels = "@String.Join(", ", pickupDeliveries.Keys)";
+            dateLabels = dateLabels.split(', ');
+
+            var deliveriesData = [];
+            var pickupsData = [];
+
+            @foreach(string key in pickupDeliveries.Keys)
+            {
+                @:deliveriesData.push(@pickupDeliveries[key]["Deliveries"]);
+                @:pickupsData.push(@pickupDeliveries[key]["Pickups"])
+            }
+
+                var chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: dateLabels,
+                        datasets: [
+                            {
+                                label: 'Deliveries',
+                                backgroundColor: '#c51111',
+                                borderColor: '#a11111',
+                                data: deliveriesData,
+                                fill: false
+                            },
+                            {
+                                label: 'Pickups',
+                                backgroundColor: '#6A1B9A',
+                                borderColor: '#6A1B9A',
+                                data: pickupsData,
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+            });
+        </script>
+
+        <br />
+        <div class="divider"></div>
+    }
+
+    <br />
+
+    @if (TempData.ContainsKey("ToppingsOccurrences"))
+    {
+        Dictionary<string, int> toppingsDictionary =
+            (TempData["ToppingsOccurrences"] as Dictionary<string, int>);
+
+        <h4 class="light">Types Of Toppings Sold</h4>
+
+        <canvas id="topping-stats" height="250" width="600"></canvas>
+
+        <script>
+            window.addEventListener('load', function () {
+
+                var ctx = document.getElementById('topping-stats').getContext('2d');
+                var toppingLabels = "@String.Join(", ", toppingsDictionary.Keys)";
+                toppingLabels = toppingLabels.split(', ');
+
+                var toppingsData = [];
+
+                @foreach(string key in toppingsDictionary.Keys)
+                {
+                    @:toppingsData.push(@toppingsDictionary[key]);
+                }
+
+                var chart = new Chart(ctx, {
+                    type: 'bar',
+                    
+                    data: {
+                        labels: toppingLabels,
+                        datasets: [{
+                            label: 'Toppings',
+                            backgroundColor: 'rgba(106,27,154, 0.7)',
+                            data: toppingsData
+                        }]
+                    }
+                        
+                })
+            }); // EventListener END
+        </script>
+
+        <br />
+        <div class="divider"></div>
+    }
+
+    <br />
+
+    @if (TempData.ContainsKey("ValuableDrivers"))
+    {
+        <ul class="collection with-header">
+            <li class="collapsible-header light"><h4 class="light">Top 3 Drivers</h4></li>
+            @foreach (KeyValuePair<UserPO, int> driverStats in TempData["ValuableDrivers"] as Dictionary<UserPO, int>)
+            {
+                <li class="collection-item">
+                    <div>
+                        @driverStats.Key.FirstName, @driverStats.Key.LastName
+                        <a class="secondary-content" href="/Account/UserDetails/@driverStats.Key.UserID">
+                            <i class="material-icons">person</i>
+                        </a>
+                    </div>
+                    <div>
+                        Total Deliveries: <b>@driverStats.Value</b>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+<script src="~/Scripts/Chart.bundle.min.js"></script>

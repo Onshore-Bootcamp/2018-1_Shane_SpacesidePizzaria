@@ -1,0 +1,63 @@
+﻿@using SpaceSidePizzaria.Models
+@model List<OrderPO>
+
+@{
+    ViewBag.Title = "Ready Deliveries";
+}
+
+<div class="container">
+    @if (Model.Count == 0)
+    {
+        <h4 class="light">There are no available deliveries at the moment.</h4>
+    }
+    else
+    {
+        <h2>Delivery Orders</h2>
+
+        if (TempData.ContainsKey("SuccessMessage"))
+        {
+            <p class="green-text">@TempData["SuccessMessage"]</p>
+        }
+
+        if (TempData.ContainsKey("ErrorMessage"))
+        {
+            <p class="red-text">@TempData["ErrorMessage"]</p>
+        }
+
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th class="capitalize">Buyer Name</th>
+                    <th>Address</th>
+                    <th>Paid For</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (OrderPO order in Model)
+                {
+                    <tr>
+                        @if (Session["Role"] != null && int.TryParse(Session["Role"].ToString(), out int role) && role == 1)
+                        {
+                            <td class="capitalize">@Html.ActionLink(order.BuyerName, "UserDetails", "Account", new { ID = order.UserID }, null)</td>
+
+                        }
+                        else
+                        {
+                            <td class="capitalize">@order.BuyerName</td>
+                        }
+                        <td>@order.BuyerAddress</td>
+                        <td>@order.Paid</td>
+                        <td>@Html.DisplayFor(model => order.Total)</td>
+                        <td>
+                            @Html.ActionLink("Details", "OrderDetails", "Order", new { ID = order.OrderID }, null) |
+                            @Html.ActionLink("Take Delivery", "TakeDelivery", "Order", new { ID = order.OrderID }, null)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

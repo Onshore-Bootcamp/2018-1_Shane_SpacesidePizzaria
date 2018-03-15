@@ -1,0 +1,75 @@
+﻿@using SpaceSidePizzaria.Models
+@model UserPO
+@{
+    ViewBag.Title = Model.Username + " - details";
+    string zipCode = String.IsNullOrEmpty(Model.ZipCode) ? "No zipcode supplied" : Model.ZipCode;
+    string phone = String.IsNullOrEmpty(Model.Phone) ? "No phone number supplied" : Model.Phone;
+    string address = String.IsNullOrEmpty(Model.Address) ? "No address supplied" : Model.Address;
+    string city = String.IsNullOrEmpty(Model.City) ? "No city supplied" : Model.City;
+    string state = String.IsNullOrEmpty(Model.State) ? "No state supplied" : Model.State;
+
+    int sessionRole = 0;
+
+    if (Session["Role"] != null)
+    {
+        int.TryParse(Session["Role"].ToString(), out sessionRole);
+    }
+}
+
+<div class="container details">
+    <h2 class="capitalize">@Model.LastName, @Model.FirstName</h2>
+
+    <span>@Html.DisplayNameFor(model => Model.Username): </span><span>@Model.Username</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Email): </span><span>@Model.Email</span><br />
+    <span>@Html.DisplayNameFor(model => Model.FirstName): </span><span>@Model.FirstName</span><br />
+    <span>@Html.DisplayNameFor(model => Model.LastName): </span><span>@Model.LastName</span><br />
+    @if (sessionRole == 1)
+    {
+        <span>@Html.DisplayNameFor(model => Model.DateAdded): </span><span>@Html.DisplayFor(model => Model.DateAdded)</span><br />
+    }
+    else { /* Only show the "Date added if the current user is an Admin. */ }
+    <span>@Html.DisplayNameFor(model => Model.ZipCode): </span><span>@zipCode</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Phone): </span><span>@phone</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Address): </span><span>@address</span><br />
+    <span>@Html.DisplayNameFor(model => Model.City): </span><span>@city</span><br />
+    <span>@Html.DisplayNameFor(model => Model.State): </span><span>@state</span><br />
+
+    @if (sessionRole < 3)
+    {
+        string userRoleDescription = String.Empty;
+
+        if (Model.RoleID == 1)
+        {
+            userRoleDescription = "Admin";
+        }
+        else if (Model.RoleID == 2)
+        {
+            userRoleDescription = "Driver";
+        }
+        else
+        {
+            userRoleDescription = "User";
+        }
+        <div>
+            <span>Role: </span><span>@userRoleDescription</span>
+        </div>
+    }
+
+    <br />
+
+    @if (sessionRole != 2)
+    {
+        <div>
+            @Html.ActionLink("Update", "Update", new { ID = Model.UserID }, new { @class = "waves-effect waves-light btn purple darken-3" })
+            @Html.ActionLink("Delete", "Delete", new { ID = Model.UserID }, new { @class = "waves-effeft-waves-light btn materialize-red" })
+        </div>
+    }
+    else
+    {
+        <div title="Employees may not update their account, please ask a manager if you need to update your account." class="btn grey lighten-3 grey-text waves-effect waves-ripple">
+            Update
+        </div>
+        <div title="Employees may not delete their account" class="btn grey lighten-3 grey-text waves-effect waves-ripple">Delete</div>
+    }
+    <br />
+</div>

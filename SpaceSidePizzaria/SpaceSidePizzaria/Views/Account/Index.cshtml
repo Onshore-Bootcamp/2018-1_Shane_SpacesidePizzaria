@@ -1,0 +1,70 @@
+﻿@using SpaceSidePizzaria.Models
+@model List<UserPO>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+<div class="container">
+    <h2>Users</h2>
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <p class="red-text">@TempData["ErrorMessage"]</p>
+    }
+
+    @if (TempData.ContainsKey("SuccessMessage"))
+    {
+        <p class="green-text">@TempData["SuccessMessage"]</p>
+    }
+
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => Model[0].Username)</th>
+                <th>@Html.DisplayNameFor(model => Model[0].Email)</th>
+                <th>@Html.DisplayNameFor(model => Model[0].FirstName)</th>
+                <th>@Html.DisplayNameFor(model => Model[0].LastName)</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        @foreach (UserPO user in Model)
+        {
+            string userRoleDescription = String.Empty;
+            if (user.RoleID == 1)
+            {
+                userRoleDescription = "Admin";
+            }
+            else if (user.RoleID == 2)
+            {
+                userRoleDescription = "Driver";
+            }
+            else
+            {
+                userRoleDescription = "User";
+            }
+
+            <tr>
+                <td>@Html.DisplayFor(model => user.Username)</td>
+                <td>@Html.DisplayFor(model => user.Email)</td>
+                <td>@Html.DisplayFor(model => user.FirstName)</td>
+                <td>@Html.DisplayFor(model => user.LastName)</td>
+                <td>@userRoleDescription</td>
+                <td>
+                    @Html.ActionLink("Update", "Update", new { ID = user.UserID }) |
+                    @Html.ActionLink("Details", "UserDetails", new { ID = user.UserID }) |
+                    @if (user.RoleID != 1)
+                    {
+                        @Html.ActionLink("Delete", "Delete", "Account", new { ID = user.UserID }, null)
+                    }
+                    else
+                    {
+                        <a class="grey-text text-lighten-1" title="You cannot delete another admin.">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+        <tbody></tbody>
+    </table>
+</div>

@@ -1,0 +1,6 @@
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\bin\Debug\SpaceSidePizzariaBLL.dll
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\bin\Debug\SpaceSidePizzariaBLL.pdb
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\obj\Debug\SpaceSidePizzariaBLL.csproj.CoreCompileInputs.cache
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\obj\Debug\SpaceSidePizzariaBLL.dll
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\obj\Debug\SpaceSidePizzariaBLL.pdb
+C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\obj\Debug\SpaceSidePizzariaBLL.csprojResolveAssemblyReference.cache

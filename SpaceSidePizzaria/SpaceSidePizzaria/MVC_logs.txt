@@ -1,0 +1,327 @@
+﻿[2/16/2018 8:31:59 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/16/2018 8:51:35 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:27:25 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:32:07 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:34:51 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:55:13 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:00:18 AM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 10005
+[2/17/2018 11:02:49 AM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 10005
+[2/17/2018 11:05:50 AM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 10005
+[2/17/2018 11:07:37 AM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 10005
+[2/17/2018 1:24:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 1:31:29 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 4:14:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 9:01:24 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:35:39 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 10:40:11 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:07:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:23:06 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:25:28 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:34:32 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:36:25 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/17/2018 11:44:19 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 10005
+[2/17/2018 11:50:06 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/18/2018 4:05:02 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/18/2018 4:23:47 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/18/2018 9:24:08 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/19/2018 9:23:50 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/19/2018 9:33:28 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/19/2018 9:34:23 AM] - Fatal - mscorlib - Join - Value cannot be null.
+Parameter name: value
+   at System.String.Join(String separator, String[] value)
+   at SpaceSidePizzaria.Models.PizzaPO.get_Toppings() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Models\PizzaPO.cs:line 33
+   at SpaceSidePizzaria.Mapping.PizzaMapper.PizzaPOtoPizzaDO(PizzaPO from) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Mapping\PizzaMapper.cs:line 41
+   at SpaceSidePizzaria.Custom.PizzaController.CreatePizza(PizzaPO form) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 94
+[2/19/2018 9:37:17 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/19/2018 9:40:42 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/19/2018 9:43:47 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 10:34:54 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 12:17:02 PM] - Fatal - SpaceSidePizzaria - FillPizzaSelectItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.FillPizzaSelectItems(PizzaPO pizzaPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 66
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInCart(Int32 index) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 208
+[2/20/2018 12:18:22 PM] - Fatal - SpaceSidePizzaria - FillPizzaSelectItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.FillPizzaSelectItems(PizzaPO pizzaPO)
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInCart(Int32 index)
+[2/20/2018 12:19:00 PM] - Fatal - SpaceSidePizzaria - FillPizzaSelectItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.FillPizzaSelectItems(PizzaPO pizzaPO)
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInCart(Int32 index)
+[2/20/2018 12:21:37 PM] - Fatal - SpaceSidePizzaria - FillPizzaSelectItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.FillPizzaSelectItems(PizzaPO pizzaPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 66
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInCart(Int32 index) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 208
+[2/20/2018 2:08:33 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 8:38:09 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 8:45:57 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 8:48:16 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/20/2018 8:52:28 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 8:39:15 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 10:36:52 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 10:56:00 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 10:58:28 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 11:03:15 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/21/2018 3:12:14 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:15:01 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:17:39 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:20:10 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:40:52 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 12:48:14 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 1:07:14 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:05:19 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:08:54 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:11:55 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:36:24 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:54:53 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 2:57:03 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 3:02:09 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 3:25:22 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 3:32:53 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 3:57:33 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 4:05:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:08:50 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:11:51 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:16:18 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:18:51 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:21:29 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/22/2018 10:22:22 PM] - WARNING - CartController - CreateOrder - Unable to add a pizza from the cart to the database.
+[2/22/2018 10:22:22 PM] - WARNING - CartController - CreateOrder - Unable to add a pizza from the cart to the database.
+[2/23/2018 8:09:34 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:14:38 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:17:48 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:19:43 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:22:14 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:31:52 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 8:34:57 AM] - Fatal - SpaceSidePizzariaBLL - CalculateBasePizzaCost - Object reference not set to an instance of an object.
+   at SpaceSidePizzariaBLL.PriceCalculator.CalculateBasePizzaCost(PizzaBO pizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PriceCalculator.cs:line 20
+   at SpaceSidePizzariaBLL.PizzaBLO.GetPizzaCost(PizzaBO pizzaBO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PizzaBLO.cs:line 14
+   at SpaceSidePizzaria.Custom.PizzaController.CreatePizza(PizzaPO form) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 384
+[2/23/2018 8:44:51 AM] - Fatal - SpaceSidePizzariaBLL - CalculateBasePizzaCost - Object reference not set to an instance of an object.
+   at SpaceSidePizzariaBLL.PriceCalculator.CalculateBasePizzaCost(PizzaBO pizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PriceCalculator.cs:line 20
+   at SpaceSidePizzariaBLL.PizzaBLO.GetPizzaCost(PizzaBO pizzaBO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PizzaBLO.cs:line 14
+   at SpaceSidePizzaria.Custom.PizzaController.CreatePizza(PizzaPO form) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 384
+[2/23/2018 8:48:28 AM] - Fatal - SpaceSidePizzariaBLL - CalculateBasePizzaCost - Object reference not set to an instance of an object.
+   at SpaceSidePizzariaBLL.PriceCalculator.CalculateBasePizzaCost(PizzaBO pizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PriceCalculator.cs:line 20
+   at SpaceSidePizzariaBLL.PizzaBLO.GetPizzaCost(PizzaBO pizzaBO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PizzaBLO.cs:line 14
+   at SpaceSidePizzaria.Custom.PizzaController.CreatePizza(PizzaPO form) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 384
+[2/23/2018 8:48:58 AM] - Fatal - SpaceSidePizzariaBLL - CalculateBasePizzaCost - Object reference not set to an instance of an object.
+   at SpaceSidePizzariaBLL.PriceCalculator.CalculateBasePizzaCost(PizzaBO pizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PriceCalculator.cs:line 20
+   at SpaceSidePizzariaBLL.PizzaBLO.GetPizzaCost(PizzaBO pizzaBO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\PizzaBLO.cs:line 14
+   at SpaceSidePizzaria.Custom.PizzaController.CreatePizza(PizzaPO form) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 384
+[2/23/2018 8:54:06 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 9:47:22 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 12:57:57 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 3:03:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 3:32:47 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 4:14:44 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 6:36:45 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 10:56:36 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 11:01:38 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 11:04:08 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 11:19:52 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 11:23:06 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/23/2018 11:39:24 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 1:30:02 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 9:51:19 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 10:07:06 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 10:21:19 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 11:02:59 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 11:04:20 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/24/2018 11:06:14 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 12:30:38 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 1:56:43 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 2:10:52 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 2:24:27 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 2:33:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 3:00:13 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 3:24:10 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 3:28:58 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 3:29:24 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 53
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 104
+[2/25/2018 3:29:27 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 53
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 104
+[2/25/2018 3:30:19 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 53
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 104
+[2/25/2018 3:34:31 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 5:07:46 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 7:45:46 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 7:55:00 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 54
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 111
+[2/25/2018 7:55:05 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 54
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 111
+[2/25/2018 7:55:47 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 54
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 111
+[2/25/2018 7:57:09 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 54
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 111
+[2/25/2018 7:59:08 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 54
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 111
+[2/25/2018 8:13:35 PM] - Fatal - SpaceSidePizzaria - FillSelectListItems - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Controllers.OrderController.FillSelectListItems(OrderPO orderPO)
+   at SpaceSidePizzaria.Controllers.OrderController.ViewPendingOrders()
+[2/25/2018 8:51:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/25/2018 9:04:44 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 8:14:30 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 8:20:27 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 8:22:49 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 9:56:11 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 10:30:28 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 10:32:36 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 11:21:25 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 12:47:53 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 1:12:40 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 4:08:57 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 4:23:24 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 4:25:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 8:30:27 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 8:51:09 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 9:13:36 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 9:31:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/26/2018 9:34:03 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/27/2018 3:34:55 PM] - Fatal - SpaceSidePizzaria - UpdatePizzaInOrder - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInOrder(Int64 ID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\PizzaController.cs:line 511
+[2/27/2018 3:37:42 PM] - Fatal - SpaceSidePizzaria - UpdatePizzaInOrder - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Custom.PizzaController.UpdatePizzaInOrder(Int64 ID)
+[2/27/2018 4:34:50 PM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[2/27/2018 4:36:43 PM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[2/27/2018 4:37:24 PM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[2/27/2018 4:50:13 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/27/2018 4:51:44 PM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[2/27/2018 4:51:58 PM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[2/27/2018 4:57:29 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 7:58:55 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 8:41:37 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 10:22:18 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 11:00:28 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 2:20:42 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 2:21:27 PM] - WARNING - AccountController - Delete - An admin tried to delete another admin account.  Admin UserID: 4 was trying to delete Admin with UserID: 10004
+[2/28/2018 2:22:41 PM] - WARNING - AccountController - Delete - An admin tried to delete another admin account.  Admin UserID: 4 was trying to delete Admin with UserID: 10004
+[2/28/2018 3:03:34 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[2/28/2018 4:24:08 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 9:28:45 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 12:47:45 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 12:48:55 PM] - Fatal - System.Core - First - Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SpaceSidePizzariaBLL.OrderBLO.GetDayOfMonthSoldMost(List`1 allOrders) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\OrderBLO.cs:line 46
+   at SpaceSidePizzariaBLL.OrderBLO.GetStats(List`1 allOrders) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\OrderBLO.cs:line 24
+   at SpaceSidePizzaria.Controllers.OrderController.Stats() in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 704
+[3/1/2018 12:49:35 PM] - Fatal - System.Core - First - Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SpaceSidePizzariaBLL.OrderBLO.GetDayOfMonthSoldMost(List`1 allOrders) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\OrderBLO.cs:line 46
+   at SpaceSidePizzariaBLL.OrderBLO.GetStats(List`1 allOrders) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\OrderBLO.cs:line 24
+   at SpaceSidePizzaria.Controllers.OrderController.Stats()
+[3/1/2018 12:50:03 PM] - Fatal - System.Core - First - Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SpaceSidePizzariaBLL.OrderBLO.GetDayOfMonthSoldMost(List`1 allOrders) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaBLL\OrderBLO.cs:line 46
+   at SpaceSidePizzaria.Controllers.OrderController.Stats()
+[3/1/2018 12:54:26 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 12:57:47 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 1:06:23 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 1:15:25 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 6:18:51 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 6:58:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 7:19:35 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/1/2018 7:48:40 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/2/2018 8:54:27 AM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[3/2/2018 8:54:48 AM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[3/2/2018 8:57:49 AM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[3/2/2018 9:11:34 AM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[3/2/2018 9:31:39 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/2/2018 1:43:31 PM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[3/2/2018 1:44:01 PM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[3/2/2018 2:57:04 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/3/2018 6:09:26 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/3/2018 9:31:51 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/4/2018 3:13:53 PM] - Fatal - SpaceSidePizzaria - OrderDOtoOrderPO - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Mapping.OrderMapper.OrderDOtoOrderPO(OrderDO from) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Mapping\OrderMapper.cs:line 37
+   at SpaceSidePizzaria.Controllers.OrderController.DeleteOrder(Int64 ID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 437
+[3/4/2018 3:14:00 PM] - Fatal - SpaceSidePizzaria - OrderDOtoOrderPO - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Mapping.OrderMapper.OrderDOtoOrderPO(OrderDO from) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Mapping\OrderMapper.cs:line 37
+   at SpaceSidePizzaria.Controllers.OrderController.DeleteOrder(Int64 ID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 437
+[3/4/2018 3:14:18 PM] - Fatal - SpaceSidePizzaria - OrderDOtoOrderPO - Object reference not set to an instance of an object.
+   at SpaceSidePizzaria.Mapping.OrderMapper.OrderDOtoOrderPO(OrderDO from) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Mapping\OrderMapper.cs:line 37
+   at SpaceSidePizzaria.Controllers.OrderController.DeleteOrder(Int64 ID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzaria\Controllers\OrderController.cs:line 437
+[3/4/2018 5:43:29 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Shane
+[3/4/2018 5:58:51 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/4/2018 9:52:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/4/2018 10:02:18 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/4/2018 10:08:50 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 8:51:40 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 9:54:21 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 3:35:03 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 6:56:27 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 7:06:11 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 8:39:10 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/5/2018 9:02:52 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 1:57:57 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 2:55:36 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 4:29:10 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 4:52:20 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 6:10:08 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/6/2018 6:16:22 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 6:18:01 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 9:33:30 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 9:34:07 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 9:35:37 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 9:41:00 PM] - WARNING - PizzaController - DeletePizza - User #20010 tried to delete someone elses pizza
+[3/6/2018 11:00:41 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 5:16:26 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 5:17:15 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 7:50:26 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 8:31:02 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 9:07:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 9:11:31 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/7/2018 9:41:07 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 9:32:00 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 9:43:06 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:25:40 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:31:38 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:32:49 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:33:53 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:35:32 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 10:48:47 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 11:34:22 AM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 4:01:30 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/8/2018 4:41:21 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 12:35:06 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 3:36:00 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 6:44:31 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:45:04 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:48:45 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:49:54 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:50:15 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:51:02 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:55:13 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 6:56:40 PM] - Info - Mvc Layer - Update from AccountController POST Action - A user possibly tried to change a value on a hidden input. UserID: 30018
+[3/9/2018 7:03:13 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 7:04:07 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 7:04:44 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 7:13:03 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 7:22:19 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 7:24:45 PM] - WARNING - AccountController - Delete - An admin tried to delete another admin account.  Admin UserID: 4 was trying to delete Admin with UserID: 10004
+[3/9/2018 8:58:29 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 9:03:31 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/9/2018 9:12:35 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/10/2018 2:35:45 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/10/2018 2:43:18 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/10/2018 3:47:13 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/10/2018 3:49:49 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/10/2018 9:35:08 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 2:30:05 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 2:32:15 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 2:33:38 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 2:34:44 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 2:36:20 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 3:04:12 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 4:04:01 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 4:59:55 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 5:10:54 PM] - WARNING - PizzaController - UpdatePizzaInOrder - UserID: 20007 tried to update someone else's pizza.
+[3/11/2018 5:11:00 PM] - WARNING - PizzaController - DeletePizza - User #20007 tried to delete someone elses pizza
+[3/11/2018 5:18:30 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 5:41:09 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/11/2018 6:04:22 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin
+[3/12/2018 1:25:02 PM] - Info - Mvc Layer - SetUserSession from AccountController - ADMIN logged on with username Admin

@@ -1,0 +1,151 @@
+﻿
+@using SpaceSidePizzaria.Models;
+@model List<OrderPO>
+
+@{
+    ViewBag.Title = "Completed Orders";
+}
+
+<div class="container">
+
+    @if (Model.Count == 0)
+    {
+        <h3>There are no orders.</h3>
+    }
+    else
+    {
+        <h2 class="light">Completed Orders</h2>
+
+        if (TempData.ContainsKey("curIndex"))
+        {
+            int curIndex = (int)TempData["curIndex"];
+            <div style="position: relative; height: 70px">
+                <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; top: 0; right: 0">
+                    <a class="btn-floating btn-large purple darken-3">
+                        <img src="~/Content/Images/ic_menu_white.png" />
+                    </a>
+                    <ul>
+                        <li><a href="CompletedOrders?index=@curIndex&size=10" class="btn-floating purple darken-1">10</a></li>
+                        <li><a href="CompletedOrders?index=@curIndex&size=15" class="btn-floating purple darken-1">15</a></li>
+                        <li><a href="CompletedOrders?index=@curIndex&size=20" class="btn-floating purple darken-1">20</a></li>
+                        <li><a href="CompletedOrders?index=@curIndex&size=50" class="btn-floating purple darken-1">50</a></li>
+                    </ul>
+                </div>
+            </div>
+        }
+
+        <table class="striped bordered">
+            <thead>
+                <tr>
+                    <th class="capitalize">Buyer Name</th>
+                    <th>Delivery Order</th>
+                    <th>Paid For</th>
+                    @if (Model.Any(orderPO => !String.IsNullOrEmpty(orderPO.DriverFirstName)))
+                    {
+                        <th>Driver Name</th>
+                    }
+                    <th>Order Date</th>
+                    <th>Date Fulfilled</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (OrderPO order in Model)
+                {
+                    <tr>
+                        <td class="capitalize">@Html.ActionLink(order.BuyerName, "UserDetails", "Account", new { ID = order.UserID }, null)</td>
+
+                        <td>@order.IsDelivery</td>
+                        <td>@order.Paid</td>
+                        @if (Model.Any(orderPO => !String.IsNullOrEmpty(orderPO.DriverFirstName)))
+                        {
+                            <td>@order.DriverFirstName</td>
+                        }
+                        <td>@Html.DisplayFor(model => order.OrderDate)</td>
+                        <td>@Html.DisplayFor(model => order.OrderFulfilledTime)</td>
+                        <td>
+                            @Html.ActionLink("Details", "OrderDetails", "Order", new { ID = order.OrderID }, null) |
+                            @Html.ActionLink("Delete", "DeleteOrder", "Order", new { ID = order.OrderID }, null)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        if (TempData.ContainsKey("maxPages"))
+        {
+            int curIndex = (int)TempData["curIndex"];
+            int maxPages = (int)TempData["maxPages"];
+            int numberBlock = (int)Math.Floor((decimal)(curIndex / 8)) * 8;
+            int size = (int)TempData["size"];
+
+            <ul class="pagination">
+                @if (curIndex == 0)
+                {
+                    <li class="disabled">
+                        <a>
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="CompletedOrders?index=@(curIndex - 1)&size=@size">
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    </li>
+                }
+
+                @if (numberBlock > 0)
+                {
+                    <li>
+                        <a href="CompletedOrders?index=0&size=@size">
+                            1
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a>
+                            ...
+                        </a>
+                    </li>
+                }
+
+                @for (int i = numberBlock; i < Math.Min(numberBlock + 9, maxPages + 1); i++)
+                {
+                    if (i == curIndex)
+                    {
+                        <li class="active  purple darken-3"><a href="CompletedOrders?index=@i&size=@size">@(i + 1)</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="CompletedOrders?index=@i&size=@size">@(i + 1)</a></li>
+                    }
+                }
+
+                @if (numberBlock < maxPages - 8)
+                {
+                    <li class="disabled">
+                        <a>...</a>
+                    </li>
+                    <li>
+                        <a href="CompletedOrders?index=@maxPages&size=@size">@(maxPages + 1)</a>
+                    </li>
+                }
+
+                @if (curIndex == maxPages)
+                {
+                    <li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
+                }
+                else
+                {
+                    <li class="waves-effect"><a href="CompletedOrders?index=@(curIndex+1)&size=@size"><i class="material-icons">chevron_right</i></a></li>
+                }
+            </ul>
+        }
+
+
+    }
+</div>
+

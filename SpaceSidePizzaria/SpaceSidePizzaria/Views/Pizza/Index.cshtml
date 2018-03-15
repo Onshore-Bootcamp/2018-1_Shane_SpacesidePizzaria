@@ -1,0 +1,59 @@
+﻿@using SpaceSidePizzaria.Models;
+@using System.Text;
+@model List<List<PizzaPO>>
+
+@{
+    ViewBag.Title = "Shop Pizza";
+}
+
+<div class="container">
+    <h2>Shop</h2>
+
+    @if (TempData.ContainsKey("SuccessMessage"))
+    {
+        <p class="green-text">@TempData["SuccessMessage"]</p>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <p>There are no items to display.</p>
+    }
+    else
+    {
+
+        // Loop through each row in the matrix and generate the
+        // HTML needed to create a materialcss card for a PizzaPO.
+
+        foreach (List<PizzaPO> row in Model)
+        {
+            <div class="row">
+                @foreach (PizzaPO pizza in row)
+                {
+                    <div class="col s12 m4">
+                        <div class="card sticky-action">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="@pizza.ImagePath" />
+                            </div>
+                            <div class="card-content">
+                                <i class="material-icons activator">more_vert</i>
+                                <p>@pizza.Description</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><i class="material-icons right">close</i></span>
+                                <div>
+                                    <span class="bold">Price:</span><span>@Html.DisplayFor(model => pizza.Price)</span><br />
+                                    <span class="bold">Size:</span><span>@Html.DisplayFor(model => pizza.Size) inch</span><br />
+                                    <span class="bold">Toppings:</span><span>@Html.DisplayFor(model => pizza.Toppings)</span><br />
+                                    <span class="bold">Sauce:</span><span>@Html.DisplayFor(model => pizza.Sauce)</span>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <i class="material-icons">add_shopping_cart</i>@Html.ActionLink("Add To Cart", "AddPizzaToCart", "Cart", new { ID = pizza.PizzaID }, new { @class = "purple-text darken-3" })
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>

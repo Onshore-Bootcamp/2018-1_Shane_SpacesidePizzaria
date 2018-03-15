@@ -1,0 +1,60 @@
+﻿@using SpaceSidePizzaria.Models;
+@model List<OrderPO> 
+
+@{
+    ViewBag.Title = "My Orders";
+}
+
+<div class="container">
+    @if (Model.Count == 0)
+    {
+        <h3 class="light">You have no pending orders.</h3>
+    }
+    else
+    {
+        <h2>My Pending Orders</h2>
+
+        if (TempData.ContainsKey("ErrorMessage"))
+        {
+            <p class="red-text">@TempData["ErrorMessage"]</p>
+        }
+        if (TempData.ContainsKey("SuccessMessage"))
+        {
+            <p class="green-text">@TempData["SuccessMessage"]</p>
+        }
+
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th class="capitalize">Buyer Name</th>
+                    <th>Status</th>
+                    <th>Delivery Order</th>
+                    <th>Paid For</th>
+                    <th>Driver Name</th>
+                    <th>Order Date</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (OrderPO order in Model)
+                {
+                    <tr>
+                        <td class="capitalize">@Html.ActionLink(order.BuyerName, "UserDetails", "Account", new { ID = order.UserID }, null)</td>
+                        <td>@order.Status</td>
+                        <td>@order.IsDelivery</td>
+                        <td>@order.Paid</td>
+                        <td class="capitalize">@order.DriverFirstName</td>
+                        <td>@order.OrderDate</td>
+                        <td>@Html.DisplayFor(model => order.Total)</td>
+                        <td>
+                            @Html.ActionLink("Details", "OrderDetails", "Order", new { ID = order.OrderID }, null) |
+                            @Html.ActionLink("Delete", "DeleteOrder", "Order", new { ID = order.OrderID }, null)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

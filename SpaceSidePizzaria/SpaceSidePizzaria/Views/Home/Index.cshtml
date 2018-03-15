@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div id="landing">
+    <div class="row">
+        <div class="col offset-l6 col-lg-6">
+            <div id="landing-container">
+                <h2 class="light center-block white-text" style="margin-top: 0; padding-top: 40px; margin-bottom: -10px">Welcome To Spaceside</h2>
+                <h5 class="center-align center-block white-text"><b>- Our Pizza Is Out Of This World -</b></h5>
+
+                <h5 class="white-text center-align" style="margin-top: 30px;">We just upgraded our Website! You can now visit the shop page, order online, and track the status on your order.</h5>
+
+                <div class="btn-container">
+                    @Html.ActionLink("Create Custom Pizza", "CreatePizza", "Pizza", null, new { @class = "btn waves-effect waves-light purple darken-3" })
+                    @Html.ActionLink("Shop Pizzas", "Index", "Pizza", null, new { @class = "btn waves-effect waves-light", @style = "background-color: #CD615F;" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div class="container">
+
+    <h2 class="center-align">Light Speed Deliveries</h2>
+    <br />
+
+    <div class="row">
+        <div class="col m4 quick-facts">
+            <i class="material-icons">timeline</i>
+            <p>Check the status on your order at anytime.</p>
+        </div>
+
+        <div class="col m4 quick-facts">
+            <i class="material-icons">av_timer</i>
+            <p>Deliveries at light speed!</p>
+        </div>
+
+        <div class="col m4 quick-facts">
+            <i class="material-icons">attach_money</i>
+            <p>The prices are out of this world..</p>
+        </div>
+    </div>
+</div>
+
+<section id="oven-baked">
+    <img src="~/Content/Images/pizza-oven.jpg" alt="Oven backed pizza." />
+    <div id="oven-baked-text">
+        <h3>Oven Baked Pizzas</h3>
+    </div>
+</section>
+
+<section id="fresh">
+    <div class="row">
+        <div id="fresh-container" class="col l4 m12">
+            <div id="fresh-text">
+                <h3>Fresh Ingredients</h3>
+                <h5 class="light">Think Globally Act Locally.</h5>
+                <p>All of our ingredients are locally sourced, from local farmers and growers.</p>
+            </div>
+        </div>
+
+        <div class="col l8 m12">
+            <img src="~/Content/Images/mushrooms.jpg" alt="Fresh Ingredients" />
+        </div>
+    </div>
+</section>

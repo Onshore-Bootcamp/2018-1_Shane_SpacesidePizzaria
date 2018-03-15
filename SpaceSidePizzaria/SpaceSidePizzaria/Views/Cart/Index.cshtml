@@ -1,0 +1,118 @@
+﻿
+@using SpaceSidePizzaria.ViewModels;
+@using SpaceSidePizzaria.Models;
+@model CartPaymentVM
+
+@{
+    ViewBag.Title = "View Cart";
+}
+
+<div class="container">
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <p>@TempData["ErrorMessage"]</p>
+    }
+
+    @if (Model.Cart.Count == 0)
+    {
+        <h4 class="light">There are no items in your cart.</h4>
+    }
+    else
+    {
+        <h2>Items In Cart</h2>
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for (int i = 0; i < Model.Cart.Count; i++)
+                {
+                    PizzaPO pizza = Model.Cart[i];
+                    <tr>
+                        <td>@pizza.Description</td>
+                        <td>@Html.DisplayFor(model => pizza.Price)</td>
+                        <td>
+                            @if (pizza.PizzaID != 0) // If the pizza is a prefab
+                            {
+                                @Html.ActionLink("Update", "UpdatePizzaInCart", "Pizza", new { index = i }, new { @onclick = "return confirmUpdate()" })
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Update", "UpdatePizzaInCart", "Pizza", new { index = i }, null)
+                            }
+                            |
+                            @Html.ActionLink("Details", "ViewPizzaDetails", "Cart", new { index = i }, null) |
+                            @Html.ActionLink("Remove", "RemovePizza", "Cart", new { index = i }, null)
+                        </td>
+                    </tr>
+                }
+                <tr><th>Total: @Html.DisplayFor(model => Model.PaymentPO.Total)</th></tr>
+            </tbody>
+        </table>
+        <br />
+        <div>
+            @Html.ActionLink("Add A Custom Pizza", "CreatePizza", "Pizza", null, new { @class = "btn purple darken-3 waves-effect waves-light" })
+
+            @if (Session["Role"] != null)
+            {
+                <div class="row" style="margin-top: 20px;">
+                    @using (Html.BeginForm("CreateOrder", "Cart", FormMethod.Post, new { @id = "checkout-form" }))
+                    {
+                        if (TempData.ContainsKey("PaymentErrorMessage"))
+                        {
+                            <p class="red-text" style="margin: 40px 0 -20px 0">@TempData["PaymentErrorMessage"]</p>
+                        }
+
+                        <div class="col m5 s12">
+                            <br />
+                            <p style="margin: 20px 0;">
+                                @Html.CheckBoxFor(model => Model.PaymentPO.ForDelivery)
+                                @Html.LabelFor(model => Model.PaymentPO.ForDelivery)
+                            </p>
+
+                            <p style="margin: 20px 0;">
+                                @Html.CheckBoxFor(model => Model.PaymentPO.PayWithCash)
+                                @Html.LabelFor(model => Model.PaymentPO.PayWithCash)
+                            </p>
+
+                            <div class="input-field">
+                                @Html.TextBoxFor(model => Model.PaymentPO.CreditCard)
+                                @Html.LabelFor(model => Model.PaymentPO.CreditCard)
+                                @if (TempData.ContainsKey("CreditCardError"))
+                                {
+                                    <p class="red-text">@TempData["CreditCardError"]</p>
+                                }
+                            </div>
+
+                            <button class="btn green waves-effect waves-light">Checkout</button>
+                        </div>
+                    }
+                </div>
+
+            }
+            else
+            {
+                <div>
+                    <br />
+                    <button title="You must have an account before you can checkout." class="btn grey lighten-1 waves-effect waves-ripple black-text">Checkout</button>
+                    <p>You must <a href="/Account/Register">create</a> an account or <a href="/Account/Login">login</a> before you can checkout.</p>
+                </div>
+            }
+        </div>
+        <br />
+    }
+
+    <div id="update-modal" class="modal">
+        <div class="modal-action modal-close waves-effect waves-purple btn-flat"><img src="~/Content/Images/ic_close.png" alt="Close" /></div>
+        <div class="modal-content">
+
+        </div>
+    </div>
+    <script src="~/Scripts/checkout.js"></script>
+</div>

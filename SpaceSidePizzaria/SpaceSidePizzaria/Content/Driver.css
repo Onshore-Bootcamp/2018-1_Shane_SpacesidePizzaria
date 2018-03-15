@@ -1,0 +1,36 @@
+
+#mobile-menu {
+  position: fixed;
+}
+
+.nav-wrapper {
+  width: calc(100vw - 300px)
+}
+
+#landing {
+  background-position: top left;
+  background-size: 76%;
+}
+
+#landing .offset-l6 {
+  margin-left: 40% !important;
+}
+
+body {
+  padding-left: 300px;
+}
+
+@media (max-width: 992px) {
+  
+  #landing .offset-l6 {
+    margin-left: unset !important;
+  }
+  
+  .nav-wrapper {
+    width: 100%;
+  }
+  
+  body {
+    padding: unset;
+  }
+}

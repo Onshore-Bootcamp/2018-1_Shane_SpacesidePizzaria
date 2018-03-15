@@ -1,0 +1,582 @@
+﻿[2/16/2018 3:20:13 PM] - Info - Data Access - DeleteUserByID - User with 10006 was deleted from the database.  Number of rows affected: 1
+[2/19/2018 9:37:57 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_NEW_PREFAB_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.AddNewPrefabPizza(PizzaDO newPrefabPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 114
+[2/19/2018 10:15:44 AM] - Fatal - mscorlib - StringToNumber - Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at SpaceSidePizzariaDAL.Mapping.PizzaDataTableMapper.DataRowToPizzaDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\PizzaDataTableMapper.cs:line 20
+[2/19/2018 10:24:10 AM] - Fatal - mscorlib - StringToNumber - Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at SpaceSidePizzariaDAL.Mapping.PizzaDataTableMapper.DataRowToPizzaDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\PizzaDataTableMapper.cs:line 21
+[2/19/2018 10:26:39 AM] - Fatal - mscorlib - StringToNumber - Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at SpaceSidePizzariaDAL.Mapping.PizzaDataTableMapper.DataRowToPizzaDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\PizzaDataTableMapper.cs:line 26
+[2/19/2018 10:31:27 AM] - Fatal - mscorlib - StringToNumber - Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at SpaceSidePizzariaDAL.Mapping.PizzaDataTableMapper.DataRowToPizzaDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\PizzaDataTableMapper.cs:line 27
+[2/21/2018 8:40:36 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 2  Rows Affected: 1
+[2/21/2018 8:43:15 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 2  Rows Affected: 1
+[2/21/2018 8:44:15 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 2  Rows Affected: 1
+[2/21/2018 8:46:46 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 9:01:59 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 9:13:45 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 9:16:57 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 2  Rows Affected: 1
+[2/21/2018 9:30:35 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 9:35:06 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 9:41:36 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 10:22:06 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 10:24:02 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'UPDATE_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.UpdatePizza(PizzaDO updatedPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 307
+[2/21/2018 10:29:12 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 1  Rows Affected: 1
+[2/21/2018 10:31:41 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 1  Rows Affected: 1
+[2/21/2018 10:32:26 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 1  Rows Affected: 1
+[2/21/2018 10:37:40 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 1  Rows Affected: 1
+[2/21/2018 10:39:01 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 2  Rows Affected: 1
+[2/21/2018 10:40:14 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 1  Rows Affected: 1
+[2/21/2018 10:56:12 AM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 1  Number of rows affected1
+[2/21/2018 10:58:46 AM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 2  Number of rows affected1
+[2/21/2018 10:58:49 AM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 10:14:23 AM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 10:20:53 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 3  Rows Affected: 1
+[2/22/2018 10:41:23 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 3  Rows Affected: 1
+[2/22/2018 2:14:53 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 4  Number of rows affected1
+[2/22/2018 2:22:14 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 3  Number of rows affected1
+[2/22/2018 2:22:14 PM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 2:36:30 PM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 2:42:15 PM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 2:42:34 PM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 2:54:58 PM] - WARNING - PizzaDAO - GetAllPrefabPizzas - There seem to be no prefab pizzas in the database.
+[2/22/2018 2:57:31 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 5  Rows Affected: 1
+[2/22/2018 3:02:43 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 5  Rows Affected: 1
+[2/22/2018 3:03:16 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 5  Rows Affected: 1
+[2/22/2018 3:54:42 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 5  Number of rows affected1
+[2/22/2018 4:07:39 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 7  Number of rows affected1
+[2/22/2018 4:07:42 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10  Number of rows affected1
+[2/22/2018 4:07:43 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 6  Number of rows affected1
+[2/22/2018 10:09:37 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function CREATE_ORDER has too many arguments specified.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 45
+[2/22/2018 10:13:16 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 43
+[2/22/2018 10:16:44 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 43
+[2/23/2018 8:59:19 AM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_NEW_PIZZA' expects parameter '@Toppings', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.AddNewPizza(PizzaDO newPizza) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\PizzaDAO.cs:line 56
+[2/23/2018 9:47:36 AM] - Fatal - System.Data - GetDataColumn - Column 'OrderFulfilled' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at SpaceSidePizzariaDAL.Mapping.OrderDataTableMapping.DataRowToOrderDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\OrderDataTableMapping.cs:line 23
+[2/23/2018 9:48:01 AM] - Fatal - System.Data - GetDataColumn - Column 'OrderFulfilled' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at SpaceSidePizzariaDAL.Mapping.OrderDataTableMapping.DataRowToOrderDO(DataRow row) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\Mapping\OrderDataTableMapping.cs:line 23
+[2/23/2018 4:15:28 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_ORDER' expects parameter '@UserID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 89
+[2/23/2018 4:16:17 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_ORDER' expects parameter '@UserID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 89
+[2/23/2018 6:37:03 PM] - Fatal - System.Data - GetNodeByIndex - There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 91
+[2/23/2018 6:38:33 PM] - Fatal - System.Data - GetNodeByIndex - There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 91
+[2/23/2018 6:38:51 PM] - Fatal - System.Data - GetNodeByIndex - There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 91
+[2/23/2018 6:47:59 PM] - Fatal - System.Data - GetNodeByIndex - There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SpaceSidePizzariaDAL.OrderDAO.GetOrderByID(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 91
+[2/23/2018 11:24:33 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_ORDER' expects parameter '@Paid', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 43
+[2/23/2018 11:30:21 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'CREATE_ORDER' expects parameter '@Paid', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 43
+[2/24/2018 2:44:16 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure OBTAIN_ALL_PENDING_ORDERS has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetPendingOrders(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 408
+[2/24/2018 2:46:32 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure OBTAIN_ALL_PENDING_ORDERS has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetPendingOrders(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 408
+[2/24/2018 5:53:13 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure OBTAIN_ALL_PENDING_ORDERS has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetPendingOrders(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 408
+[2/24/2018 5:54:11 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure OBTAIN_ALL_PENDING_ORDERS has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetPendingOrders(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 408
+[2/24/2018 5:58:26 PM] - Fatal - .Net SqlClient Data Provider - OnError - Could not find stored procedure 'OBTAIN_ALL_PENDING_ORDERS_BY_USERID'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpaceSidePizzariaDAL.OrderDAO.GetPendingOrders(Int64 userID)
+[2/24/2018 6:12:50 PM] - Fatal - .Net SqlClient Data Provider - OnError - Could not find stored procedure 'DELETE_ORDER'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.OrderDAO.DeleteOrder(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 453
+[2/24/2018 6:17:53 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 20  Number of rows affected1
+[2/24/2018 6:22:18 PM] - Fatal - SpaceSidePizzariaDAL - DataRowToOrderDO - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.Mapping.OrderDataTableMapping.DataRowToOrderDO(DataRow row)
+[2/24/2018 6:22:26 PM] - Fatal - SpaceSidePizzariaDAL - DataRowToOrderDO - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.Mapping.OrderDataTableMapping.DataRowToOrderDO(DataRow row)
+[2/24/2018 6:22:33 PM] - Fatal - SpaceSidePizzariaDAL - DataRowToOrderDO - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.Mapping.OrderDataTableMapping.DataRowToOrderDO(DataRow row)
+[2/24/2018 9:47:45 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 21  Number of rows affected1
+[2/24/2018 9:51:40 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 17  Number of rows affected1
+[2/24/2018 9:55:10 PM] - Fatal - .Net SqlClient Data Provider - OnError - Could not find stored procedure 'DELETE_ORDER'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.OrderDAO.DeleteOrder(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 495
+[2/24/2018 9:55:24 PM] - Fatal - .Net SqlClient Data Provider - OnError - Could not find stored procedure 'DELETE_ORDER'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.OrderDAO.DeleteOrder(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 495
+[2/24/2018 9:57:08 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 18  Number of rows affected1
+[2/24/2018 10:00:24 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 19  Number of rows affected1
+[2/24/2018 10:04:32 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 22  Number of rows affected1
+[2/24/2018 10:10:33 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 23  Number of rows affected1
+[2/24/2018 10:12:17 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 24  Number of rows affected1
+[2/24/2018 10:12:41 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 27  Number of rows affected1
+[2/24/2018 10:21:32 PM] - Fatal - .Net SqlClient Data Provider - OnError - Could not find stored procedure 'DELETE_ORDER'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.OrderDAO.DeleteOrder(Int64 orderID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 495
+[2/24/2018 10:22:34 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'DELETE_ORDER_BY_ID' expects parameter '@OrderID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.OrderDAO.DeleteOrder(Int64 orderID)
+[2/24/2018 10:23:16 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #4 Rows Affected: 1
+[2/24/2018 10:23:42 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #5 Rows Affected: 3
+[2/24/2018 10:26:27 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 28  Number of rows affected1
+[2/24/2018 10:26:44 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #6 Rows Affected: 1
+[2/24/2018 10:30:45 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 33  Number of rows affected1
+[2/24/2018 10:34:13 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #7 Rows Affected: 5
+[2/26/2018 8:27:28 AM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10006 Rows Affected: 5
+[2/26/2018 1:03:51 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #8 Rows Affected: 4
+[2/26/2018 4:27:23 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10012 Rows Affected: 9
+[2/27/2018 3:48:49 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10060  Rows Affected: 1
+[2/27/2018 3:49:27 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10060  Rows Affected: 1
+[2/27/2018 3:50:17 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10060  Number of rows affected1
+[2/27/2018 3:55:49 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10061  Number of rows affected1
+[2/27/2018 3:55:51 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10062  Number of rows affected1
+[2/27/2018 3:55:52 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10063  Number of rows affected1
+[2/27/2018 3:55:54 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10064  Number of rows affected1
+[2/27/2018 3:56:07 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10015 Rows Affected: 1
+[2/27/2018 4:23:22 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10016 Rows Affected: 5
+[2/28/2018 8:02:00 AM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10017 Rows Affected: 5
+[2/28/2018 8:02:55 AM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10018 Rows Affected: 3
+[2/28/2018 10:44:58 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10079  Rows Affected: 1
+[2/28/2018 10:55:57 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 8  Rows Affected: 1
+[2/28/2018 2:16:41 PM] - Fatal - .Net SqlClient Data Provider - OnError - The DELETE statement conflicted with the REFERENCE constraint "FK_Order_To_User". The conflict occurred in database "Pizza_Db_Test", table "dbo.Order", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.UserDAO.DeleteUserByID(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\UserDAO.cs:line 275
+[2/28/2018 2:19:08 PM] - Info - Data Access - DeleteUserByID - User with 10005 was deleted from the database.  Number of rows affected: 8
+[3/1/2018 9:33:39 AM] - Info - Data Access - DeleteUserByID - User with 30012 was deleted from the database.  Number of rows affected: 1
+[3/1/2018 6:25:23 PM] - Info - Data Access - DeleteUserByID - User with 30013 was deleted from the database.  Number of rows affected: 1
+[3/1/2018 7:39:48 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10078  Rows Affected: 1
+[3/2/2018 9:35:47 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10093  Rows Affected: 1
+[3/2/2018 9:35:59 AM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10093  Rows Affected: 1
+[3/2/2018 9:37:55 AM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10024 Rows Affected: 2
+[3/2/2018 9:43:45 AM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10094  Number of rows affected1
+[3/2/2018 1:39:42 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10099  Rows Affected: 1
+[3/2/2018 1:41:21 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10026 Rows Affected: 4
+[3/4/2018 2:56:13 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 57
+[3/4/2018 2:57:18 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 57
+[3/4/2018 2:59:27 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder)
+[3/4/2018 3:05:59 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\OrderDAO.cs:line 57
+[3/4/2018 3:07:54 PM] - Fatal - .Net SqlClient Data Provider - OnError - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Pizza_Order". The conflict occurred in database "Pizza_Db_Test", table "dbo.Order", column 'OrderID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.PizzaDAO.AddNewPizza(PizzaDO newPizza)
+[3/4/2018 3:09:17 PM] - Fatal - SpaceSidePizzariaDAL - CreateOrder - Specified cast is not valid.
+   at SpaceSidePizzariaDAL.OrderDAO.CreateOrder(OrderDO newOrder)
+[3/4/2018 3:13:31 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10028 Rows Affected: 1
+[3/4/2018 3:13:40 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10029 Rows Affected: 1
+[3/4/2018 3:13:50 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10030 Rows Affected: 1
+[3/4/2018 3:13:57 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10031 Rows Affected: 1
+[3/4/2018 3:14:02 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10032 Rows Affected: 1
+[3/4/2018 3:14:05 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10033 Rows Affected: 1
+[3/4/2018 3:14:09 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10034 Rows Affected: 1
+[3/4/2018 3:14:14 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10035 Rows Affected: 4
+[3/4/2018 5:57:23 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10040 Rows Affected: 2
+[3/6/2018 6:19:40 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10216 Rows Affected: 3
+[3/6/2018 9:45:03 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10306  Number of rows affected1
+[3/6/2018 9:45:14 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10215 Rows Affected: 1
+[3/6/2018 9:54:43 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10310  Number of rows affected1
+[3/6/2018 9:54:48 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10218 Rows Affected: 1
+[3/7/2018 7:37:08 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10311  Rows Affected: 1
+[3/7/2018 7:38:39 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10311  Rows Affected: 1
+[3/7/2018 7:38:53 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10311  Rows Affected: 1
+[3/7/2018 7:39:04 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 8  Number of rows affected1
+[3/7/2018 8:30:51 PM] - Fatal - .Net SqlClient Data Provider - .ctor - A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SpaceSidePizzariaDAL.UserDAO.GetUserByUsername(String username) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\UserDAO.cs:line 108
+[3/9/2018 12:29:00 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10317  Number of rows affected1
+[3/9/2018 12:31:22 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10320  Number of rows affected1
+[3/9/2018 6:28:59 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:29:10 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:30:50 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:31:18 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:31:40 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:31:50 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10324  Rows Affected: 1
+[3/9/2018 6:32:20 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10323  Number of rows affected1
+[3/9/2018 6:32:28 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10321  Number of rows affected1
+[3/9/2018 6:38:20 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10222 Rows Affected: 3
+[3/9/2018 6:57:05 PM] - Info - Data Access - DeleteUserByID - User with 30018 was deleted from the database.  Number of rows affected: 1
+[3/10/2018 2:43:36 PM] - Fatal - .Net SqlClient Data Provider - OnError - The DELETE statement conflicted with the REFERENCE constraint "FK_Order_To_User_DriverID". The conflict occurred in database "Pizza_Db_Test", table "dbo.Order", column 'DriverID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.UserDAO.DeleteUserByID(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\UserDAO.cs:line 275
+[3/10/2018 3:50:11 PM] - Fatal - .Net SqlClient Data Provider - OnError - Procedure or function 'DELETE_DRIVER_BY_ID' expects parameter '@DriverID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpaceSidePizzariaDAL.UserDAO.DeleteDriverByID(Int64 userID) in C:\Users\Shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\UserDAO.cs:line 318
+[3/10/2018 3:52:23 PM] - Info - User Data Access - DeleteDriverByID - Driver with 30020 was deleted from the database.  Number of rows affected: 3
+[3/11/2018 2:13:12 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10224 Rows Affected: 3
+[3/11/2018 2:18:06 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10330  Number of rows affected1
+[3/11/2018 2:22:35 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10329  Rows Affected: 1
+[3/11/2018 2:22:48 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10329  Rows Affected: 1
+[3/11/2018 3:46:06 PM] - Info - Data Access - DeleteUserByID - User with 30021 was deleted from the database.  Number of rows affected: 4
+[3/11/2018 4:17:23 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10340  Number of rows affected1
+[3/11/2018 4:17:28 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10338  Number of rows affected1
+[3/11/2018 4:17:35 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10339  Number of rows affected1
+[3/11/2018 5:00:05 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10341  Number of rows affected1
+[3/11/2018 5:07:10 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10229 Rows Affected: 4
+[3/11/2018 5:07:44 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10346  Rows Affected: 1
+[3/11/2018 5:08:22 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10345  Number of rows affected1
+[3/11/2018 5:22:58 PM] - Info - Data Access - DeleteUserByID - User with 30022 was deleted from the database.  Number of rows affected: 3
+[3/11/2018 5:26:45 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10347  Number of rows affected1
+[3/11/2018 5:26:57 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10311  Rows Affected: 1
+[3/11/2018 5:27:02 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 10311  Number of rows affected1
+[3/11/2018 5:28:08 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10348  Rows Affected: 1
+[3/11/2018 5:28:24 PM] - INFO - PizzaDAO - UpdatePizza - Updated PizzaID 10348  Rows Affected: 1
+[3/11/2018 5:52:54 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #10233 Rows Affected: 3
+[3/11/2018 7:32:03 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #20231 Rows Affected: 3
+[3/12/2018 1:21:56 PM] - INFO - OrderDAO - DeleteOrder - Deleted Order #20232 Rows Affected: 4
+[3/12/2018 1:28:21 PM] - Info - Data Access - DeleteUserByID - User with 30023 was deleted from the database.  Number of rows affected: 5
+[3/12/2018 1:31:24 PM] - INFO - PizzaDAO - DeletePizza - Deleted pizza with ID: 20355  Number of rows affected1

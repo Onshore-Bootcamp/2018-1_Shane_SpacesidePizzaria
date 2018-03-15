@@ -1,0 +1,38 @@
+#landing {
+    height: 82.5vh;
+}
+
+@media (max-width: 992px) {
+    #landing {
+        height: 90.5vh;
+    }
+    
+    .nav-content {
+        display: none;
+    }
+    
+    .extended-nav-fix {
+        display: none;
+    }
+}
+
+.click-to-toggle {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.click-to-toggle ul {
+    position: absolute;
+    left: 20px !important;
+    width: 300px !important;
+}
+
+.click-to-toggle li a {
+    padding-right: 12px;
+}
+
+.click-to-toggle img {
+    width: 32px;
+    padding-top: 12px;
+}

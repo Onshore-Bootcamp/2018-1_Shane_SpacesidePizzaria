@@ -1,0 +1,99 @@
+﻿@using SpaceSidePizzaria.Models;
+@model UserPO
+
+@{
+    ViewBag.Title = "Update";
+    string dateFormatted = Model.DateAdded.ToString("yyyy-MM-dd");
+}
+
+<div class="container">
+    <h2>Update</h2>
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <p class="red-text">@TempData["ErrorMessage"]</p>
+    }
+
+    <div class="row">
+        @using (Html.BeginForm("Update", "Account", FormMethod.Post))
+        {
+            <div class="col s12 m5">
+
+                @Html.HiddenFor(model => Model.UserID)
+                <input name="Password" value="noPassword" hidden />
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.Username)
+                    @Html.LabelFor(model => Model.Username)
+                    @Html.ValidationMessageFor(model => Model.Username, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.Email, new { @type = "email" })
+                    @Html.LabelFor(model => Model.Email)
+                    @Html.ValidationMessageFor(model => Model.Email, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.FirstName)
+                    @Html.LabelFor(model => Model.FirstName)
+                    @Html.ValidationMessageFor(model => Model.FirstName, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.LastName)
+                    @Html.LabelFor(model => Model.LastName)
+                    @Html.ValidationMessageFor(model => Model.LastName, null, new { @class = "red-text" })
+                </div>
+
+                @Html.HiddenFor(model => Model.DateAdded, new { @Value = dateFormatted })
+
+                @if (Session["Role"] != null && int.TryParse(Session["Role"].ToString(), out int role) && role == 1 &&
+                Model.RoleID != 1)
+                {
+                    <div class="input-field">
+                        @Html.DropDownListFor(model => Model.RoleID, Model.RoleSelectListItems)
+                        @Html.LabelFor(model => Model.RoleID)
+                        @Html.ValidationMessageFor(model => Model.RoleID, null, new { @class = "red-text" })
+                    </div>
+                }
+                else
+                {
+                    @Html.HiddenFor(model => Model.RoleID, new { @Value = Model.RoleID })
+                }
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.Phone, new { @class = "validate", @type = "tel" })
+                    @Html.LabelFor(model => Model.Phone)
+                    @Html.ValidationMessageFor(modle => Model.Phone, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.Address)
+                    @Html.LabelFor(model => Model.Address)
+                    @Html.ValidationMessageFor(model => Model.Address, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.City)
+                    @Html.LabelFor(model => Model.City)
+                    @Html.ValidationMessageFor(model => Model.City, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.State)
+                    @Html.LabelFor(model => Model.State)
+                    @Html.ValidationMessageFor(model => Model.State, null, new { @class = "red-text" })
+                </div>
+
+                <div class="input-field">
+                    @Html.TextBoxFor(model => Model.ZipCode)
+                    @Html.LabelFor(model => Model.ZipCode)
+                    @Html.ValidationMessageFor(model => Model.ZipCode, null, new { @class = "red-text" })
+                </div>
+
+                <button type="submit" class="purple darken-3 btn waves-light waves-effect">Update Account</button>
+            </div>
+        }
+    </div>
+</div>

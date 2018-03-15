@@ -1,0 +1,6 @@
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\bin\Debug\SpaceSidePizzariaDAL.dll
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\bin\Debug\SpaceSidePizzariaDAL.pdb
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\obj\Debug\SpaceSidePizzariaDAL.csprojResolveAssemblyReference.cache
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\obj\Debug\SpaceSidePizzariaDAL.csproj.CoreCompileInputs.cache
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\obj\Debug\SpaceSidePizzariaDAL.dll
+c:\users\shane\source\repos\SpaceSidePizzaria\SpaceSidePizzariaDAL\obj\Debug\SpaceSidePizzariaDAL.pdb

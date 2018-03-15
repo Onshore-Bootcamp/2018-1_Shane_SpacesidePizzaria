@@ -1,0 +1,25 @@
+﻿@using SpaceSidePizzaria.Models;
+@model PizzaPO
+
+@{
+    ViewBag.Title = "Pizza Details";
+
+    int sessionRole = 0;
+
+    if (Session["Role"] != null)
+    {
+        int.TryParse(Session["Role"].ToString(), out sessionRole);
+    }
+}
+
+<div class="container">
+
+    <h2>Pizza Details</h2>
+
+    <span>@Html.DisplayNameFor(model => Model.Size)</span><span>@Model.Size</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Crust)</span><span>@Model.Crust</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Cheese)</span><span>@Model.Cheese</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Sauce)</span><span>@Model.Sauce</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Toppings)</span><span>@Model.Toppings</span><br />
+    <span>@Html.DisplayNameFor(model => Model.Price)</span><span>@Html.DisplayFor(model => Model.Price)</span><br />
+</div>
